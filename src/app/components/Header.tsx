@@ -42,7 +42,7 @@ export function Header() {
     >
      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div
-    className="flex items-center justify-between h-12 lg:h-20"
+    className="flex items-center justify-between h-13 lg:h-20"
     style={{ direction: 'ltr' }} // 🔥 يثبت الترتيب
   >
     
@@ -52,7 +52,7 @@ export function Header() {
         <img 
           src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-1/543373301_1192327992930638_6047528909729759757_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=lQGc_zq6QR8Q7kNvwEGHZ6f&_nc_oc=AdqC45y5jO33npRMu3rUjjrowi54qDCHc4S-K5b1mpuFhvptIFBAwIdXjxlRYjA7aLY&_nc_zt=24&_nc_ht=scontent.fcai19-7.fna&_nc_gid=W5qZdNapVGGybZ8fgTamxg&oh=00_Af0F2VdOnN2VTFjPu4dtU5vTtmUOCT4sEx0QqlQ5SQvSAw&oe=69F0938D" 
           alt="Better Life Logo" 
-          className="h-12 w-auto object-contain"
+          className="h-13 w-auto object-contain"
         />
       </div>
     </Link>
