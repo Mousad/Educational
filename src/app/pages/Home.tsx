@@ -158,58 +158,79 @@ export default function Home() {
 </section>
 
       {/* Services Section */}
-      <section className="py-9" style={{ backgroundColor: '#f9f8f7' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-9" style={{ backgroundColor: '#f9f8f7' }}>
+  
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={stagger}
+      className="text-center"
+    >
+      
+      <SectionHeader
+        title={t('services.title')}
+        subtitle={t('services.subtitle')}
+        isRTL={isRTL}
+      />
+      <motion.div
+        variants={stagger}
+        className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+      >
+        
+        {serviceCards.map(({ icon: Icon, titleKey, descKey, path, color, bg }, i) => (
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={stagger}
+            key={i}
+            variants={fadeInUp}
+            dir="auto"
+            className="group bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 text-center"
           >
-            <SectionHeader
-              title={t('services.title')}
-              subtitle={t('services.subtitle')}
-              isRTL={isRTL}
-            />
-            <motion.div
-              variants={stagger}
-              className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            
+            {/* Icon */}
+            <div
+              className="w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-colors duration-300"
+              style={{ backgroundColor: bg }}
             >
-              {serviceCards.map(({ icon: Icon, titleKey, descKey, path, color, bg }, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeInUp}
-                  className={`group bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ${isRTL ? 'text-right' : 'text-left'}`}
-                >
-                  <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-colors duration-300"
-                    style={{ backgroundColor: bg }}
-                  >
-                    <Icon className="w-7 h-7" style={{ color }} />
-                  </div>
-                  <h3 className="text-gray-900 font-bold mb-3" style={{ fontSize: '1.05rem' }}>
-                    {t(titleKey)}
-                  </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                    {t(descKey)}
-                  </p>
-                  <Link
-                    to={path}
-                    className="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
-                    style={{
-                      color,
-                      flexDirection: isRTL ? 'row-reverse' : 'row',
-                    }}
-                  >
-                    {t('common.readMore')}
-                    <ArrowRight className="w-4 h-4" style={{ transform: isRTL ? 'rotate(180deg)' : 'none' }} />
-                  </Link>
-                </motion.div>
-              ))}
-            </motion.div>
+              <Icon className="w-6 h-6" style={{ color }} />
+            </div>
+
+            {/* Title */}
+            <h3
+              className="text-gray-900 font-bold mb-2 text-center"
+              style={{ fontSize: '0.95rem' }}
+            >
+              {t(titleKey)}
+            </h3>
+
+            {/* Description */}
+            <p className="text-gray-500 text-xs leading-relaxed mb-4 text-center">
+              {t(descKey)}
+            </p>
+
+            {/* Link */}
+            <Link
+              to={path}
+              className="inline-flex items-center justify-center gap-2 text-xs font-semibold w-full transition-colors"
+              style={{ color }}
+            >
+              {t('common.readMore')}
+              <ArrowRight
+                className="w-4 h-4"
+                style={{ transform: isRTL ? 'rotate(180deg)' : 'none' }}
+              />
+            </Link>
+
           </motion.div>
-        </div>
-      </section>
+        ))}
+
+      </motion.div>
+
+    </motion.div>
+
+  </div>
+</section>
 
       {/* Study Destinations */}
       <section className="py-20 bg-white">

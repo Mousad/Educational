@@ -34,14 +34,14 @@ export const translations: Record<Language, Record<string, string>> = {
     // Services Section
     'services.title': 'Our Services',
     'services.subtitle': 'Comprehensive educational solutions to help you achieve your academic and professional goals',
-    'services.admissions.title': 'University Admissions',
-    'services.admissions.desc': 'Expert guidance for university applications worldwide with full support from consultation to enrollment.',
-    'services.equivalency.title': 'Certificates Equivalency',
-    'services.equivalency.desc': 'Official recognition and equivalency services for academic and professional certificates.',
-    'services.authentication.title': 'Document Authentication',
-    'services.authentication.desc': 'Professional document authentication and legalization services for academic use abroad.',
-    'services.courses.title': 'Training Courses',
-    'services.courses.desc': 'Professional development courses in leadership, NLP, marketing, and technical skills.',
+    'services.admissions.title': 'University ',
+    'services.admissions.desc': 'Expert guidance for university',
+    'services.equivalency.title': 'Certificates ',
+    'services.equivalency.desc': 'Official recognition  equivalency ',
+    'services.authentication.title': 'Document ',
+    'services.authentication.desc': 'Professional document  and ',
+    'services.courses.title': ' Courses',
+    'services.courses.desc': 'Professional development   ,',
 
     // Destinations
     'destinations.title': 'Study Destinations',
@@ -183,7 +183,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'footer.followUs': 'Follow Us',
 
     // Common
-    'common.readMore': 'Read More',
+    'common.readMore': ' More',
     'common.viewDetails': 'View Details',
     'common.backToHome': 'Back to Home',
     'common.loading': 'Loading...',
@@ -221,11 +221,11 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.admissions.title': 'القبولات ',
     'services.admissions.desc': 'توجيه متخصص لطلبات الجامعات حول العالم مع      .',
     'services.equivalency.title': 'معادلة ',
-    'services.equivalency.desc': 'خدمات الاعتراف الرسمي ومعادلة الشهادات  .',
+    'services.equivalency.desc': 'خدمات الاعتراف الرسمي ومعادلة   .',
     'services.authentication.title': 'توثيق ',
-    'services.authentication.desc': 'خدمات توثيق المستندات ومصادقتها     .',
+    'services.authentication.desc': 'خدمات توثيق المستندات ومصادقتها',
     'services.courses.title': 'الكورسات',
-    'services.courses.desc': 'كورسات التطوير   NLP والتسويق والمهارات التقنية.',
+    'services.courses.desc': 'كورسات التطوير   NLP والتسويق والمهارات .',
 
     // Destinations
     'destinations.title': 'وجهات الدراسة',
@@ -326,7 +326,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'servicesPage.consulting.desc': 'مستشارون أكاديميون متخصصون يوجهونك في رحلتك التعليمية من المدرسة حتى الدراسات العليا.',
     'servicesPage.training.title': 'برامج التدريب',
     'servicesPage.training.desc': 'برامج تدريبية للشركات والأفراد مصممة لتعزيز المهارات المهنية وقدرات القيادة.',
-    'servicesPage.getStarted': 'ابدأ الآن',
+    'servicesPage.getStarted': 'ابدأ ',
 
     // Countries Page
     'countriesPage.title': 'وجهات الدراسة',
@@ -367,7 +367,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'footer.followUs': 'تابعنا',
 
     // Common
-    'common.readMore': 'اقرأ المزيد',
+    'common.readMore': ' المزيد',
     'common.viewDetails': 'عرض التفاصيل',
     'common.backToHome': 'العودة للرئيسية',
     'common.loading': 'جار التحميل...',
