@@ -32,7 +32,7 @@ export const courses: Course[] = [
   {
     id: '1',
     titleEn: 'Mastering Human Development',
-    titleAr: 'إتقان التطوير البشري',
+    titleAr: 'التطوير الذاتي',
     category: 'human',
     descEn: 'A comprehensive program covering self-awareness, emotional intelligence, goal setting, and personal growth strategies.',
     descAr: 'برنامج شامل يغطي الوعي الذاتي والذكاء العاطفي وتحديد الأهداف واستراتيجيات النمو الشخصي.',
@@ -83,7 +83,7 @@ export const courses: Course[] = [
   {
     id: '2',
     titleEn: 'Sales & Marketing Mastery',
-    titleAr: 'إتقان المبيعات والتسويق',
+    titleAr: ' المبيعات والتسويق',
     category: 'sales',
     descEn: 'Learn cutting-edge sales techniques and modern digital marketing strategies to boost your business performance.',
     descAr: 'تعلم أحدث تقنيات البيع واستراتيجيات التسويق الرقمي الحديثة لتعزيز أداء عملك.',
@@ -134,7 +134,7 @@ export const courses: Course[] = [
   {
     id: '3',
     titleEn: 'NLP Practitioner Certification',
-    titleAr: 'شهادة ممارس البرمجة اللغوية العصبية',
+    titleAr: ' البرمجة اللغوية ',
     category: 'nlp',
     descEn: 'International NLP certification program to master communication, change behavior, and achieve excellence.',
     descAr: 'برنامج شهادة دولية في البرمجة اللغوية العصبية لإتقان التواصل وتغيير السلوك وتحقيق التميز.',
@@ -144,7 +144,7 @@ export const courses: Course[] = [
     level: 'Advanced',
     levelAr: 'متقدم',
     students: 620,
-    image: 'https://images.unsplash.com/photo-1607428122688-c0912ef0a671?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: 'https://i.pinimg.com/736x/54/f9/7f/54f97f90c4561b4788ac653b4125b270.jpg',
     rating: 4.9,
     objectives: {
       en: [
@@ -184,8 +184,8 @@ export const courses: Course[] = [
   },
   {
     id: '4',
-    titleEn: 'Leadership Excellence Program',
-    titleAr: 'برنامج التميز القيادي',
+    titleEn: ' Excellence Program',
+    titleAr: 'تطوير القيادات',
     category: 'leadership',
     descEn: 'Transform your leadership style and build high-performing teams with proven leadership frameworks.',
     descAr: 'حوّل أسلوبك القيادي وابنِ فرقاً عالية الأداء مع أطر القيادة المُثبتة.',
@@ -195,7 +195,7 @@ export const courses: Course[] = [
     level: 'Intermediate',
     levelAr: 'متوسط',
     students: 780,
-    image: 'https://images.unsplash.com/photo-1705234384669-c6d31c61b789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: 'https://i.pinimg.com/1200x/99/51/23/9951232749aca5a56901c9a52e305a7a.jpg',
     rating: 4.8,
     objectives: {
       en: [
@@ -235,8 +235,8 @@ export const courses: Course[] = [
   },
   {
     id: '5',
-    titleEn: 'Public Relations Professional',
-    titleAr: 'محترف العلاقات العامة',
+    titleEn: 'Public Relations ',
+    titleAr: ' العلاقات العامة',
     category: 'pr',
     descEn: 'Master the art of public relations, media management, and corporate communications.',
     descAr: 'أتقن فن العلاقات العامة وإدارة الإعلام والاتصالات المؤسسية.',
@@ -246,7 +246,7 @@ export const courses: Course[] = [
     level: 'Beginner',
     levelAr: 'مبتدئ',
     students: 540,
-    image: 'https://images.unsplash.com/photo-1613211431746-aacbe481a84b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+    image: 'https://i.pinimg.com/736x/3b/51/c9/3b51c993abf75b4afd5f93cc6602eea6.jpg',
     rating: 4.6,
     objectives: {
       en: [
@@ -286,8 +286,8 @@ export const courses: Course[] = [
   },
   {
     id: '6',
-    titleEn: 'Web Design & Programming (WDP)',
-    titleAr: 'تصميم وبرمجة المواقع (WDP)',
+    titleEn: 'Web Design & Programming ',
+    titleAr: 'تصميم وبرمجة المواقع ',
     category: 'technical',
     descEn: 'Complete web development course from HTML/CSS basics to advanced React and Node.js applications.',
     descAr: 'كورس شامل لتطوير الويب من أساسيات HTML/CSS إلى تطبيقات React و Node.js المتقدمة.',

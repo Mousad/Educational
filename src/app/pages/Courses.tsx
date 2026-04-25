@@ -29,19 +29,19 @@ export default function Courses() {
   return (
     <div className="min-h-screen pt-20" style={{ fontFamily: isRTL ? "'Cairo', sans-serif" : "'Inter', sans-serif" }}>
       {/* Hero */}
-      <section
-        className="py-20 relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #73337d 0%, #4a2954 100%)' }}
-      >
+        <section className="py-6 relative overflow-hidden">
+
+  <img
+    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.5) 1px, transparent 0)`,
           backgroundSize: '30px 30px',
         }} />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-6">
-              <BookOpen className="w-10 h-10 text-white" />
-            </div>
+            
             <h1 className="text-white text-4xl font-bold mb-4">{t('courses.title')}</h1>
             <p className="text-white/80 text-lg mb-8">{t('courses.subtitle')}</p>
 

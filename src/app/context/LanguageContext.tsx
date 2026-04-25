@@ -205,7 +205,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'خدماتنا',
     'nav.countries': 'الدول',
     'nav.contact': 'تواصل معنا',
-    'nav.applyNow': 'سجّل الآن',
+    'nav.applyNow': 'سجّل ',
 
     // Hero
     'hero.slide1.title': 'بوابتك للجامعات حول العالم',
@@ -236,16 +236,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'destinations.learnMore': 'اعرف المزيد',
 
     // Featured Courses
-    'featured.title': 'أبرز الكورسات',
+    'featured.title': ' الكورسات',
     'featured.subtitle': 'وسّع معرفتك بأكثر كورساتنا المهنية شعبية',
-    'featured.viewAll': 'عرض كل الكورسات',
+    'featured.viewAll': 'عرض  الكورسات',
     'featured.enroll': 'سجّل ',
     'featured.price': 'السعر',
 
     // CTA Banner
     'cta.title': 'هل أنت مستعد لبدء رحلتك؟',
     'cta.desc': 'انضم إلى آلاف الطلاب الذين حققوا أهدافهم التعليمية بنجاح مع Better Life للقبولات والكورسات.',
-    'cta.primary': 'ابدأ التقديم',
+    'cta.primary': ' التقديم',
     'cta.secondary': 'تصفح الكورسات',
 
     // Stats
@@ -293,7 +293,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'courses.filter.nlp': 'البرمجة اللغوية',
     'courses.filter.leadership': 'القيادة',
     'courses.filter.technical': 'الكورسات التقنية',
-    'courses.enrollNow': 'سجّل الآن',
+    'courses.enrollNow': 'سجّل ',
     'courses.duration': 'المدة',
     'courses.level': 'المستوى',
     'courses.students': 'طالب',
@@ -304,7 +304,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'courseDetails.content': 'محتوى الكورس',
     'courseDetails.preview': 'معاينة الكورس',
     'courseDetails.attachments': 'المرفقات',
-    'courseDetails.enroll': 'سجّل الآن',
+    'courseDetails.enroll': 'سجّل ',
     'courseDetails.buy': 'اشترِ الكورس',
     'courseDetails.instructor': 'المدرب',
     'courseDetails.rating': 'التقييم',
@@ -334,7 +334,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'countriesPage.universities': 'الجامعات الشريكة',
     'countriesPage.requirements': 'متطلبات القبول',
     'countriesPage.steps': 'خطوات التقديم',
-    'countriesPage.applyNow': 'قدّم الآن',
+    'countriesPage.applyNow': 'قدّم ',
     'countriesPage.egypt.title': 'الدراسة في مصر',
     'countriesPage.egypt.desc': 'تقدم مصر إرثاً أكاديمياً غنياً مع جامعات حديثة توفر تعليماً عالي الجودة بتكاليف ميسورة.',
     'countriesPage.turkey.title': 'الدراسة في تركيا',
@@ -368,8 +368,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Common
     'common.readMore': ' المزيد',
-    'common.viewDetails': 'عرض التفاصيل',
-    'common.backToHome': 'العودة للرئيسية',
+    'common.viewDetails': 'عرض ',
+    'common.backToHome': 'العودة ',
     'common.loading': 'جار التحميل...',
     'common.selectOption': 'اختر خياراً',
     'common.submit': 'إرسال',

@@ -10,7 +10,7 @@ import { HeroSlider } from '../components/HeroSlider';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { courses } from '../data/coursesData';
 
-const HERO_1 = 'https://images.unsplash.com/photo-1762438135616-926e87b91e08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920';
+const HERO_1 = 'https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/543030522_1192329759597128_6311524468721955209_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2a1932&_nc_ohc=BWnDMjA6ESkQ7kNvwF7sztV&_nc_oc=AdqOjPZC5T51qYwayFtVxsCnt_qb6VKYlqtsrT9s4aagbtCqD8bjYMr4F2YSR51mU90&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=W5qZdNapVGGybZ8fgTamxg&oh=00_Af25ZSxsOTDCsyQ0DG1A7MiJZ_jjkqYD5Tne3DFRJbm__Q&oe=69F0A04E  ';
 
 function SectionHeader({ title, subtitle, isRTL }: { title: string; subtitle: string; isRTL: boolean }) {
   return (
@@ -126,7 +126,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.1 }}
-          className="flex flex-col items-center text-center gap-3 p-5 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 shadow-lg"
+          className="flex flex-col items-center text-center gap-3 p-2 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 shadow-lg"
         >
           
           {/* Icon */}
@@ -134,7 +134,7 @@ export default function Home() {
             className="w-8 h-8 rounded-xl flex items-center justify-center"
             style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}
           >
-            <Icon className="w-6 h-6 text-white" />
+            <Icon className="w-5 h-5 text-white" />
           </div>
 
 
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
 
                     {/* Value */}
-          <div className="text-lg lg:text-xl font-bold text-white">
+          <div className="text-sm lg:text-sm font-bold text-white">
             {value}
           </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
 </section>
 
       {/* Services Section */}
-    <section className="py-9" style={{ backgroundColor: '#f9f8f7' }}>
+    <section className="py-9" style={{ backgroundColor: '#f5f5f5' }}>
   
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
@@ -233,7 +233,7 @@ export default function Home() {
 </section>
 
       {/* Study Destinations */}
-      <section className="py-20 bg-white">
+      <section className="py-8 bg-[#f5f5f5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title={t('destinations.title')}
@@ -252,7 +252,7 @@ export default function Home() {
                 key={i}
                 variants={fadeInUp}
                 className="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-400 cursor-pointer"
-                style={{ height: '340px' }}
+                style={{ height: '300px' }}
               >
                 <ImageWithFallback
                   src={image}
@@ -290,17 +290,25 @@ export default function Home() {
       </section>
 
       {/* Featured Courses */}
-      <section className="py-20" style={{ backgroundColor: '#f9f8f7' }}>
+      <section className="py-8" style={{ backgroundColor: '#f5f5f5' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`flex items-end justify-between mb-12 ${isRTL ? 'flex-row-reverse' : ''}`}>
             <div className={isRTL ? 'text-right' : 'text-left'}>
-              <div
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-full mb-3 ${isRTL ? 'flex-row-reverse' : ''}`}
-                style={{ backgroundColor: 'rgba(115,51,125,0.08)', border: '1px solid rgba(115,51,125,0.2)' }}
-              >
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#73337d' }} />
-                <span className="text-sm font-semibold" style={{ color: '#73337d' }}>{t('featured.title')}</span>
-              </div>
+              <div className="flex justify-center">
+  <div
+    className={`inline-flex items-center gap-2 px-4 py-2 rounded-full mb-3 ${
+      isRTL ? 'flex-row-reverse' : ''
+    }`}
+    style={{
+      backgroundColor: 'rgba(115,51,125,0.08)',
+      border: '1px solid rgba(115,51,125,0.2)'
+    }}
+  >
+    <span className="text-sm font-semibold" style={{ color: '#73337d' }}>
+      {t('featured.title')}
+    </span>
+  </div>
+</div>
               <p className="text-gray-500">{t('featured.subtitle')}</p>
             </div>
             <Link
@@ -390,7 +398,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-8 bg-[#f5f5f5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${isRTL ? 'lg:flex-row-reverse' : ''}`}>
             {/* Image */}
@@ -402,7 +410,7 @@ export default function Home() {
               className="relative"
               style={{ order: isRTL ? 2 : 1 }}
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl" style={{ height: '480px' }}>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl" style={{ height: '300px' }}>
                 <ImageWithFallback
                   src={HERO_1}
                   alt="Why choose us"
@@ -415,13 +423,13 @@ export default function Home() {
               </div>
               {/* Floating card */}
               <div
-                className={`absolute -bottom-6 ${isRTL ? '-left-6' : '-right-6'} bg-white rounded-2xl p-5 shadow-xl border border-gray-100`}
+                className={`absolute -bottom-4 ${isRTL ? '-left-8' : '-right-4'} bg-white rounded-2xl p-3 shadow-xl border border-gray-100`}
                 style={{ maxWidth: '200px' }}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <Award className="w-8 h-8" style={{ color: '#73337d' }} />
+                  <Award className="w-4 h-4" style={{ color: '#73337d' }} />
                   <div>
-                    <div className="font-bold text-gray-900">5,000+</div>
+                    <div className="font-bold text-xs text-gray-900">5.000+</div>
                     <div className="text-xs text-gray-500">{t('stats.students')}</div>
                   </div>
                 </div>
@@ -498,7 +506,7 @@ export default function Home() {
 
       {/* CTA Banner */}
       <section
-        className="py-24 relative overflow-hidden"
+        className="py-11 relative overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #73337d 0%, #4a2954 100%)' }}
       >
         {/* Decorative circles */}
@@ -516,7 +524,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-white text-3xl sm:text-4xl font-bold mb-4 leading-tight">
+            <h2 className="text-white text-3xl sm:text-2xl font-bold mb-4 leading-tight">
               {t('cta.title')}
             </h2>
             <p className="text-white/80 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
@@ -525,14 +533,14 @@ export default function Home() {
             <div className={`flex flex-wrap gap-4 justify-center ${isRTL ? 'flex-row-reverse' : ''}`}>
               <Link
                 to="/admissions"
-                className="px-8 py-4 rounded-xl text-sm font-bold transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
+                className="px-4 py-2 rounded-xl text-sm font-bold transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
                 style={{ backgroundColor: 'white', color: '#73337d' }}
               >
                 {t('cta.primary')}
               </Link>
               <Link
                 to="/courses"
-                className="px-8 py-4 rounded-xl text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
+                className="px-4 py-2 rounded-xl text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{ backgroundColor: 'rgba(255,255,255,0.15)', border: '2px solid rgba(255,255,255,0.4)' }}
               >
                 {t('cta.secondary')}

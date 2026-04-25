@@ -37,7 +37,7 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
+        isScrolled ? 'bg-[#f5f5f5] shadow-lg' : 'bg-[#f5f5f5] backdrop-blur-sm'
       }`}
     >
      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -135,10 +135,10 @@ export function Header() {
   {isMenuOpen && (
     <motion.div
       initial={{ opacity: 0, height: 0 }}
-      animate={{ opacity: 1, height: 'calc(100vh - 94px)' }}
+      animate={{ opacity: 1, height: 'calc(100vh - 84px)' }}
       exit={{ opacity: 0, height: 0 }}
       transition={{ duration: 0.2 }}
-      className="fixed top-16 left-0 w-full z-40 lg:hidden bg-white border-t border-gray-100 shadow-xl"
+      className="fixed top-12 left-0 w-full z-40 lg:hidden bg-white border-t border-gray-100 shadow-xl"
     >
       <div className="max-w-7xl mx-auto px-1 py-2 space-y-1 h-110 overflow-y-auto flex flex-col items-center justify-center">
         

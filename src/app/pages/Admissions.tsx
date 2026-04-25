@@ -74,21 +74,21 @@ export default function Admissions() {
   const inputStyle = { borderColor: '#e5e7eb', focusRingColor: '#73337d' };
 
   return (
-    <div className="min-h-screen pt-20" style={{ fontFamily: isRTL ? "'Cairo', sans-serif" : "'Inter', sans-serif" }}>
+    <div className="min-h-screen pt-10" style={{ fontFamily: isRTL ? "'Cairo', sans-serif" : "'Inter', sans-serif" }}>
       {/* Hero */}
-      <section
-        className="py-20 relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #73337d 0%, #4a2954 100%)' }}
-      >
+          <section
+  className="py-20 relative overflow-hidden bg-cover bg-center"
+  style={{
+    backgroundImage: `url('https://i.pinimg.com/736x/12/bc/9e/12bc9e2d7d873fc96094f5db5c0c4973.jpg')`,
+  }}
+>
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.5) 1px, transparent 0)`,
           backgroundSize: '30px 30px',
         }} />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-6">
-              <GraduationCap className="w-10 h-10 text-white" />
-            </div>
+          
             <h1 className="text-white text-4xl font-bold mb-4">{t('admissions.title')}</h1>
             <p className="text-white/80 text-lg">{t('admissions.subtitle')}</p>
           </motion.div>
@@ -109,7 +109,7 @@ export default function Admissions() {
             {/* Connector line */}
             <div className="hidden lg:block absolute top-12 left-1/2 -translate-x-1/2 w-full max-w-4xl h-0.5 bg-gradient-to-r from-transparent via-purple-200 to-transparent" />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6">
               {processSteps.map((step, i) => (
                 <motion.div
                   key={i}
