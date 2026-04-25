@@ -100,7 +100,7 @@ export function HeroSlider() {
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 ${isRTL ? 'flex-row-reverse' : ''}`}
                 style={{ backgroundColor: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)' }}
               >
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                
                 <span className="text-white text-sm font-medium">
                   {isRTL ? 'Better Center للقبولات والكورسات' : 'Better Center Admissions & Courses'}
                 </span>
@@ -146,7 +146,7 @@ export function HeroSlider() {
               >
                 <Link
                   to={slide.ctaPath}
-                  className="inline-flex items-center gap-2 px-7 py-4 rounded-xl text-white font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-white font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5"
                   style={{
                     backgroundColor: '#73337d',
                     fontSize: '1rem',
@@ -158,7 +158,7 @@ export function HeroSlider() {
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 px-7 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-7 py-2 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-0.5"
                   style={{
                     backgroundColor: 'rgba(255,255,255,0.15)',
                     backdropFilter: 'blur(10px)',
